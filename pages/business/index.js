@@ -2,8 +2,8 @@ import { DeleteIcon } from "@/components/icons/DeleteIcon";
 import { EditIcon } from "@/components/icons/EditIcon";
 import { EyeIcon } from "@/components/icons/EyeIcon";
 import { IconButton } from "@/components/icons/IconButton";
-import { LockIcon } from "@/components/icons/LockIcon"; 
-import { AiOutlineUser } from "react-icons/ai";
+import { LockIcon } from "@/components/icons/LockIcon";
+import { AiOutlineUser, AiFillMessage, AiOutlineHistory, AiTwotoneTags, AiTwotoneBell } from "react-icons/ai";
 import Image from 'next/image';
 import Layout from "@/components/layout";
 import ModelAddPartner from "@/components/partner/ModelAddPartner";
@@ -26,28 +26,15 @@ export default function Business() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Container>
-            ยินดีต้อนรับ <AiOutlineUser size={20} fill="#979797" />
-                <h1>JONGKEW</h1>
+                ยินดีต้อนรับ
+                <h1>JONGKEW <AiOutlineUser size={50} fill="#979797" /> </h1>
 
-                <Grid>
-                    <Row style={{ alignItems: 'center' }}>
-                        <Input
-                            labelLeft="ค้นหา"
-                            placeholder="พิมพ์คำค้นหา"
-                            fullWidth
-                        />
-
-                        <svg style={{ cursor: 'pointer', width: '24px', marginLeft: '10px' }} onClick={() => console.log("KKK")} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </Row>
-                </Grid>
                 <Spacer />
                 <div style={{
                     textAlign: '-webkit-right'
                 }}>
-                    <ModelAddPartner />
-                    <ModelEditPartner visible={visible} setVisible={setVisible} />
+
+
                 </div>
                 <Spacer />
 
@@ -59,58 +46,107 @@ export default function Business() {
                     }}
                 >
                     <Table.Header>
-                        <Table.Column>NO.</Table.Column>
-                        <Table.Column>USERNAME</Table.Column>
-                        <Table.Column>NAME</Table.Column>
-                        <Table.Column>LINE</Table.Column>
-                        <Table.Column>TEL</Table.Column>
+                        <Table.Column></Table.Column>
+                        <Table.Column></Table.Column>
+                        <Table.Column></Table.Column>
+                        <Table.Column>ป้ายโปรโมท</Table.Column>
+                        <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
                     </Table.Header>
                     <Table.Body>
                         <Table.Row key="1">
-                            <Table.Cell>1</Table.Cell>
-                            <Table.Cell>CEO</Table.Cell>
-                            <Table.Cell>ณัฐพงษ์</Table.Cell>
-                            <Table.Cell>CEO</Table.Cell>
-                            <Table.Cell>0909998900</Table.Cell>
+                            <Table.Cell></Table.Cell>
                             <Table.Cell>
                                 <Row justify="center" align="center">
                                     <Col css={{ d: "flex" }}>
-                                        <Tooltip content="Details">
+                                        <Tooltip content="ข้อความ">
                                             <IconButton onClick={() => console.log("View user", "user.id")}>
-                                                <EyeIcon size={20} fill="#979797" />
-                                            </IconButton>
-                                        </Tooltip>
-                                    </Col>
-                                    <Col css={{ d: "flex" }}>
-                                        <Tooltip content="Lock user">
-                                            <IconButton onClick={() => console.log("Lock user", "user.id")}>
-                                                <LockIcon size={20} fill="#979797" />
-                                            </IconButton>
-                                        </Tooltip>
-                                    </Col>
-                                    <Col css={{ d: "flex" }}>
-                                        <Tooltip content="Edit user">
-                                            <IconButton onClick={() => { setVisible(true); console.log("Edit user", "user.id") }}>
-                                                <EditIcon size={20
-                                                } fill="#979797" />
-                                            </IconButton>
-                                        </Tooltip>
-                                    </Col>
-                                    <Col css={{ d: "flex" }}>
-                                        <Tooltip
-                                            content="Delete user"
-                                            color="error"
-                                            onClick={() => console.log("Delete user", "user.id")}
-                                        >
-                                            <IconButton>
-                                                <DeleteIcon size={20} fill="#FF0080" />
+                                                <AiFillMessage size={30} />
                                             </IconButton>
                                         </Tooltip>
                                     </Col>
                                 </Row>
+                            </Table.Cell>
+                            <Table.Cell>
+                                <Row justify="center" align="center">
+                                    <Col css={{ d: "flex" }}>
+                                        <Tooltip content="ประวัติ">
+                                            <IconButton onClick={() => console.log("View user", "user.id")}>
+                                                <AiOutlineHistory size={30} />
+                                            </IconButton>
+                                        </Tooltip>
+                                    </Col>
+                                </Row>
+                            </Table.Cell>
+                            <Table.Cell>
+                                <Row justify="center" align="center">
+                                    <Col css={{ d: "flex" }}>
+                                        <Tooltip content="โปรโมชั่น">
+                                            <IconButton onClick={() => console.log("View user", "user.id")}>
+                                                <AiTwotoneTags size={30} />
+                                            </IconButton>
+                                        </Tooltip>
+                                    </Col>
+                                </Row>
+                            </Table.Cell>
+                            <Table.Cell>
+                                <Row justify="center" align="center">
+                                    <Col css={{ d: "flex" }}>
+                                        <Tooltip content="แจ้งเตือน">
+                                            <IconButton onClick={() => console.log("View user", "user.id")}>
+                                                <AiTwotoneBell size={30} />
+                                            </IconButton>
+                                        </Tooltip>
+                                    </Col>
+                                </Row>
+                            </Table.Cell>
+                            <Table.Cell></Table.Cell>
+                        </Table.Row>
+                    </Table.Body>
+                </Table>
+                <Spacer />
+
+                <ModelAddPartner />
+
+                <Spacer />
+                <Table
+                    aria-label="Example table with static content"
+                    css={{
+                        height: "auto",
+                        minWidth: "100%",
+                    }}
+                >
+
+                    <Table.Header>
+                        <Table.Column></Table.Column>
+                        <Table.Column>
+                            <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
+                        </Table.Column>
+                        <Table.Column>
+                            <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
+                        </Table.Column>
+                        <Table.Column>
+                            <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
+                        </Table.Column>
+                        <Table.Column></Table.Column>
+                        <Table.Column></Table.Column>
+                    </Table.Header>
+                    <Table.Body>
+                        <Table.Row key="1">
+                            <Table.Cell></Table.Cell>
+                            <Table.Cell>
+                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
+                            </Table.Cell>
+                            <Table.Cell>
+                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
+                            </Table.Cell>
+                            <Table.Cell>
+                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
+                            </Table.Cell>
+                            <Table.Cell>
 
                             </Table.Cell>
+                            <Table.Cell></Table.Cell>
                         </Table.Row>
                     </Table.Body>
                 </Table>
