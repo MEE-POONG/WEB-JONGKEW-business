@@ -12,6 +12,7 @@ import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip } from "@nextu
 import Head from "next/head";
 import { useState } from 'react'
 
+
 export default function Business() {
     const [visible, setVisible] = useState(false);
 
@@ -109,47 +110,47 @@ export default function Business() {
                 <ModelAddPartner />
 
                 <Spacer />
-                <Table
-                    aria-label="Example table with static content"
-                    css={{
-                        height: "auto",
-                        minWidth: "100%",
-                    }}
-                >
+                    <Table
+                        aria-label="Example table with static content"
+                        css={{
+                            height: "auto",
+                            minWidth: "100%",
+                        }}
+                    >
 
-                    <Table.Header>
-                        <Table.Column></Table.Column>
-                        <Table.Column>
-                            <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                        </Table.Column>
-                        <Table.Column>
-                            <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                        </Table.Column>
-                        <Table.Column>
-                            <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                        </Table.Column>
-                        <Table.Column></Table.Column>
-                        <Table.Column></Table.Column>
-                    </Table.Header>
-                    <Table.Body>
-                        <Table.Row key="1">
-                            <Table.Cell></Table.Cell>
-                            <Table.Cell>
+                        <Table.Header>
+                            <Table.Column></Table.Column>
+                            <Table.Column>
                                 <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Cell>
-                            <Table.Cell>
+                            </Table.Column>
+                            <Table.Column>
                                 <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Cell>
-                            <Table.Cell>
+                            </Table.Column>
+                            <Table.Column>
                                 <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Cell>
-                            <Table.Cell>
+                            </Table.Column>
+                            <Table.Column></Table.Column>
+                            <Table.Column></Table.Column>
+                        </Table.Header>
+                        <Table.Body>
+                            <Table.Row key="1">
+                                <Table.Cell></Table.Cell>
+                                <Table.Cell>
+                                    <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
+                                </Table.Cell>
+                                <Table.Cell>
+                                    <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
+                                </Table.Cell>
+                                <Table.Cell>
+                                    <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
+                                </Table.Cell>
+                                <Table.Cell>
 
-                            </Table.Cell>
-                            <Table.Cell></Table.Cell>
-                        </Table.Row>
-                    </Table.Body>
-                </Table>
+                                </Table.Cell>
+                                <Table.Cell></Table.Cell>
+                            </Table.Row>
+                        </Table.Body>
+                    </Table>
 
             </Container>
         </Layout>
