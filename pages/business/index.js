@@ -49,8 +49,8 @@ export default function Business() {
                         <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
-                        <Table.Column>ป้ายโปรโมท</Table.Column>
                         <Table.Column></Table.Column>
+                        <Table.Column><h1>ป้ายโปรโมท</h1></Table.Column>
                         <Table.Column></Table.Column>
                     </Table.Header>
                     <Table.Body>
