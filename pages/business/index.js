@@ -6,7 +6,7 @@ import { LockIcon } from "@/components/icons/LockIcon";
 import { AiOutlineUser, AiFillMessage, AiOutlineHistory, AiTwotoneTags, AiTwotoneBell } from "react-icons/ai";
 import Image from 'next/image';
 import Layout from "@/components/layout";
-import ModelAddPartner from "@/components/partner/ModelAddPartner";
+import ModelAddBusiness from "@/components/business/ModelAddBusiness";
 import ModelEditPartner from "@/components/partner/ModelEditPartner";
 import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip } from "@nextui-org/react";
 import Head from "next/head";
@@ -27,7 +27,7 @@ export default function Business() {
             </Head>
             <Container>
                 ยินดีต้อนรับ
-                <h1>JONGKEW <AiOutlineUser size={50} fill="#979797" /> </h1>
+                <h1>JONGKEW <AiOutlineUser size={50} align={"right"} /> </h1>
 
                 <Spacer />
                 <div style={{
@@ -106,7 +106,7 @@ export default function Business() {
                 </Table>
                 <Spacer />
 
-                <ModelAddPartner />
+                <ModelAddBusiness />
 
                 <Spacer />
                 <Table
