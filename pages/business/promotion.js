@@ -3,15 +3,16 @@ import { EditIcon } from "@/components/icons/EditIcon";
 import { EyeIcon } from "@/components/icons/EyeIcon";
 import { IconButton } from "@/components/icons/IconButton";
 import { LockIcon } from "@/components/icons/LockIcon";
-import { AiOutlineUser, AiFillMessage, AiOutlineHistory, AiTwotoneTags, AiTwotoneBell } from "react-icons/ai";
+import { AiOutlineUser, AiFillMessage, AiOutlineHistory, AiTwotoneTags, AiTwotoneBell, ioIoIosMegaphone, } from "react-icons/ai";
+import { IoIosMegaphone, } from "react-icons/io";
+import { BsPlus } from "react-icons/bs";
 import Image from 'next/image';
 import Layout from "@/components/layout";
-import ModelAddBusiness from "@/components/business/ModelAddBusiness";
+import ModelAddPartner from "@/components/partner/ModelAddPartner";
 import ModelEditPartner from "@/components/partner/ModelEditPartner";
 import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip } from "@nextui-org/react";
 import Head from "next/head";
 import { useState } from 'react'
-
 
 export default function Business() {
     const [visible, setVisible] = useState(false);
@@ -27,8 +28,8 @@ export default function Business() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Container>
-                ยินดีต้อนรับ
-                <h1>JONGKEW <AiOutlineUser size={50} align={"right"} /> </h1>
+                
+                <h3><button type="button" class="btn btn-warning">เพิ่มโปรโมชั่นร้าน<BsPlus size={50} /></button></h3>
 
                 <Spacer />
                 <div style={{
@@ -51,8 +52,8 @@ export default function Business() {
                         <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
-                        <Table.Column><h1>ป้ายโปรโมท</h1></Table.Column>
                         <Table.Column></Table.Column>
+                        <Table.Column><h1><IoIosMegaphone size={80} />ลดสูงสุด80%</h1></Table.Column>
                     </Table.Header>
                     <Table.Body>
                         <Table.Row key="1">
@@ -107,50 +108,51 @@ export default function Business() {
                 </Table>
                 <Spacer />
 
-                <ModelAddBusiness />
+               
 
                 <Spacer />
-                    <Table
-                        aria-label="Example table with static content"
-                        css={{
-                            height: "auto",
-                            minWidth: "100%",
-                        }}
-                    >
+                <Table
+                    aria-label="Example table with static content"
+                    css={{
+                        height: "auto",
+                        minWidth: "100%",
+                    }}
+                >
 
-                        <Table.Header>
-                            <Table.Column></Table.Column>
-                            <Table.Column>
-                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Column>
-                            <Table.Column>
-                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Column>
-                            <Table.Column>
-                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Column>
-                            <Table.Column></Table.Column>
-                            <Table.Column></Table.Column>
-                        </Table.Header>
-                        <Table.Body>
-                            <Table.Row key="1">
-                                <Table.Cell></Table.Cell>
-                                <Table.Cell>
-                                    <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                                </Table.Cell>
-                                <Table.Cell>
-                                    <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                                </Table.Cell>
-                                <Table.Cell>
-                                    <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                                </Table.Cell>
-                                <Table.Cell>
+                    <Table.Header>
+                        <Table.Column></Table.Column>
+                        <Table.Column>
+                            <Image src="/img/tag.jpg" alt="Vercel Logo" width={60000} height={15000} css={{ objectFill: "none" }} />
+                        </Table.Column>
+                        
+                        <Table.Column>
+                            
+                        </Table.Column>
+                        <Table.Column>
+                           
+                        </Table.Column>
+                        <Table.Column></Table.Column>
+                        <Table.Column></Table.Column>
+                    </Table.Header>
+                    <Table.Body>
+                        <Table.Row key="1">
+                            <Table.Cell></Table.Cell>
+                            <Table.Cell>
+                                <Image src="/img/tag.jpg" alt="Vercel Logo" width={60000} height={15000} css={{ objectFill: "none" }} />
+                            </Table.Cell>
+                            <Table.Cell>
+                                
+                            </Table.Cell>
+                            <Table.Cell>
+                                
+                            </Table.Cell>
+                            <Table.Cell>
 
-                                </Table.Cell>
-                                <Table.Cell></Table.Cell>
-                            </Table.Row>
-                        </Table.Body>
-                    </Table>
+                            </Table.Cell>
+                            <Table.Cell></Table.Cell>
+                        </Table.Row>
+                    </Table.Body>
+                </Table>
 
             </Container>
         </Layout>
