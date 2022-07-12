@@ -137,9 +137,9 @@ export default function App() {
 
                     <Table.Header>
                         <Table.Column></Table.Column>
-                        <Table.Column>รูปร้าน</Table.Column>
-                        <Table.Column>ชื่อร้าน</Table.Column>
-                        <Table.Column>เวลาที่เข้าใช้บริการได้</Table.Column>
+                        <Table.Column><h3>รูปร้าน</h3></Table.Column>
+                        <Table.Column><h3>ชื่อร้าน</h3></Table.Column>
+                        <Table.Column><h3>เวลาที่เข้าใช้บริการได้</h3></Table.Column>
                         <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
                     </Table.Header>
