@@ -10,9 +10,9 @@ import Image from 'next/image';
 import Layout from "@/components/layout";
 import ModelAddPartner from "@/components/partner/ModelAddPartner";
 import ModelEditPartner from "@/components/partner/ModelEditPartner";
-import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip } from "@nextui-org/react";
+import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip } from "@nextui-org/react"; 
 import Head from "next/head";
-import { useState } from 'react'
+import { useState } from 'react'                               
 
 export default function Business() {
     const [visible, setVisible] = useState(false);
@@ -20,16 +20,16 @@ export default function Business() {
     return (
         <Layout>
             <Head>
-                <title> Business | JONGKEW</title>
+                <title> Business | JONGKEW</title>  
                 <meta
                     name="description"
                     content="Business JONGKEW"
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Container>
+            <Container> 
                 
-                <h3><button type="button" class="btn btn-warning">เพิ่มโปรโมชั่นร้าน<BsPlus size={50} /></button></h3>
+                <h3><button type="button" class="btn btn-warning">เพิ่มโปรโมชั่นร้าน<BsPlus size={50} /></button></h3> 
 
                 <Spacer />
                 <div style={{

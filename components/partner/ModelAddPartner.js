@@ -33,12 +33,12 @@ export default function ModelAddPartner() {
                     <Grid.Container gap={4}>
                         <Grid xs={6}>
                             <Input
-                                clearable
+                               clearable
                                 fullWidth
                                 color="primary"
                                 size="lg"
                                 label="ผู้แนะนำ"
-                                placeholder="ผู้แนะนำ"
+                                placeholder="ผู้แนะนำ" 
                             />
                         </Grid>
                         <Grid>
