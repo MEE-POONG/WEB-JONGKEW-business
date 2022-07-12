@@ -8,7 +8,7 @@ import Image from 'next/image';
 import Layout from "@/components/layout";
 import ModelAddBusiness from "@/components/business/ModelAddBusiness";
 import ModelEditPartner from "@/components/partner/ModelEditPartner";
-import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip } from "@nextui-org/react";
+import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip, Progress, User } from "@nextui-org/react";
 import Head from "next/head";
 import { useState } from 'react'
 
@@ -17,8 +17,10 @@ export default function Business() {
     const [visible, setVisible] = useState(false);
 
     return (
-        <>
+        <Container>
+                <Spacer />
             <Head>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
                 <title> Business | JONGKEW</title>
                 <meta
                     name="description"
@@ -27,8 +29,29 @@ export default function Business() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Container>
-                ยินดีต้อนรับ
-                <h1>JONGKEW <AiOutlineUser size={50} align={"right"} /> </h1>
+                
+                    <div class="row">
+                        <div class="col">
+                            ยินดีต้อนรับ
+                            <h1>JONGKEW </h1>
+                        </div>
+                        <div class="col-md-auto">
+                        </div>
+                        <div class="col col-lg-1">
+                            <User
+                                bordered
+                                name="Ariana Wattson"
+                                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                                color="warning"
+                                size="xl"
+                            />
+                        </div>
+                    </div>
+                
+                
+
+
+
 
                 <Spacer />
                 <div style={{
@@ -153,6 +176,6 @@ export default function Business() {
                     </Table>
 
             </Container>
-        </>
+        </Container>
     );
 }
