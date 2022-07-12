@@ -16,7 +16,7 @@ export default function Business() {
     const [visible, setVisible] = useState(false);
 
     return (
-        <Layout>
+        <>
             <Head>
                 <title> Business | JONGKEW</title>
                 <meta
@@ -152,6 +152,6 @@ export default function Business() {
                 </Table>
 
             </Container>
-        </Layout>
+        </>
     );
 }
