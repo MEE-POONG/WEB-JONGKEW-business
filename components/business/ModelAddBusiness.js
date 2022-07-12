@@ -1,6 +1,6 @@
 import React from "react";
-import { Modal, Input, Row, Checkbox, Button, Text, Grid, Radio, Spacer } from "@nextui-org/react";
-
+import { Modal, Input, Row, Checkbox, Button, Text, Grid, Radio, Spacer, Progress } from "@nextui-org/react";
+import { Slider } from '@mui/material';
 
 
 
@@ -25,20 +25,21 @@ export default function ModelAddBusiness() {
                 onClose={closeHandler}
             >
                 <Modal.Header>
+                    
                     <Text b size={18}>
-                    <Input
-                                clearable
-                                fullWidth
-                                color="primary"
-                                size="lg"
-                                label="ชื่อร้าน"
-                                placeholder="ชื่อร้าน"
-                            />
+                        <Input
+                            clearable
+                            fullWidth
+                            color="primary"
+                            size="lg"
+                            label="ชื่อร้าน"
+                            placeholder="ชื่อร้าน"
+                        />
                     </Text>
                 </Modal.Header>
                 <Modal.Body>
                     <Grid.Container gap={4}>
-                        <Grid xs={6}>
+                        <Grid xs={4}>
                             <Input
                                 clearable
                                 fullWidth
@@ -49,7 +50,7 @@ export default function ModelAddBusiness() {
                                 placeholder="เพิ่มรูปภาพ2"
                             />
                         </Grid>
-                        <Grid>
+                        <Grid xs={4}>
                             <Input
                                 clearable
                                 fullWidth
@@ -60,7 +61,7 @@ export default function ModelAddBusiness() {
                                 placeholder="เพิ่มรูปภาพ3"
                             />
                         </Grid>
-                        <Grid>
+                        <Grid xs={4}>
                             <Input
                                 clearable
                                 fullWidth
@@ -71,27 +72,12 @@ export default function ModelAddBusiness() {
                                 placeholder="เพิ่มรูปภาพ4"
                             />
                         </Grid>
-                        <Grid>
-                            <Input
-                                clearable
-                                fullWidth
-                                color="primary"
-                                size="lg"
-                                label="เพิ่มรายละเอียดร้าน"
-                                placeholder="เพิ่มรายละเอียดร้าน"
-                            />
+                        <Grid xs={4}>
+                        <Slider defaultValue={50} aria-label="Default" valueLabelDisplay="auto" />
+                            
+
                         </Grid>
-                        <Grid>
-                            <Input
-                                clearable
-                                fullWidth
-                                color="primary"
-                                size="lg"
-                                label="เลือกจำนวนที่นั่ง"
-                                placeholder="เลือกจำนวนที่นั่ง"
-                            />
-                        </Grid>
-                        <Grid>
+                        <Grid xs={4}>
                             <Input
                                 clearable
                                 fullWidth
@@ -101,7 +87,8 @@ export default function ModelAddBusiness() {
                                 placeholder="วันที่จะเข้าใช้บริการได้"
                             />
                         </Grid>
-                        <Grid>
+
+                        <Grid xs={4}>
                             <Input
                                 clearable
                                 fullWidth
@@ -111,10 +98,10 @@ export default function ModelAddBusiness() {
                                 placeholder="เวลาที่เข้าใช้บริการได้"
                             />
                         </Grid>
-                        
+
                     </Grid.Container>
                     <Spacer />
-                    
+
                 </Modal.Body>
                 <Modal.Footer>
                     <Button auto flat color="error" onClick={closeHandler}>

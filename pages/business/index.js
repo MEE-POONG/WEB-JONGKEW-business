@@ -8,7 +8,7 @@ import Image from 'next/image';
 import Layout from "@/components/layout";
 import ModelAddBusiness from "@/components/business/ModelAddBusiness";
 import ModelEditPartner from "@/components/partner/ModelEditPartner";
-import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip } from "@nextui-org/react";
+import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip, Progress, User } from "@nextui-org/react";
 import Head from "next/head";
 import { useState } from 'react'
 
@@ -16,7 +16,7 @@ export default function Business() {
     const [visible, setVisible] = useState(false);
 
     return (
-        <>
+        <Container>
             <Head>
                 <title> Business | JONGKEW</title>
                 <meta
@@ -26,8 +26,17 @@ export default function Business() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Container>
+                
                 ยินดีต้อนรับ
-                <h1>JONGKEW <AiOutlineUser size={50} align={"right"} /> </h1>
+                <h1>JONGKEW  
+                    <User
+            bordered
+            src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+            name="Ariana Wattson"
+            color="warning"
+            size="xl"
+          /> </h1>
+                
 
                 <Spacer />
                 <div style={{
@@ -152,6 +161,6 @@ export default function Business() {
                 </Table>
 
             </Container>
-        </>
+        </Container>
     );
 }
