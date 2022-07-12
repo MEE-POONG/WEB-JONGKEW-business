@@ -7,7 +7,8 @@ import { AiOutlineUser, AiFillMessage, AiOutlineHistory, AiTwotoneTags, AiTwoton
 import Image from 'next/image';
 import Layout from "@/components/layout";
 import ModelAddBusiness from "@/components/business/ModelAddBusiness";
-import ModelEditPartner from "@/components/partner/ModelEditPartner";
+import ModelSlideBusiness from "@/components/business/ModelSlideBusiness"
+import ModelTableBusiness from "@/components/business/ModelTableBusiness"
 import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip, Progress, User } from "@nextui-org/react";
 import Head from "next/head";
 import { useState } from 'react'
@@ -73,7 +74,7 @@ export default function Business() {
                         <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
-                        <Table.Column><h1>ป้ายโปรโมท</h1></Table.Column>
+                        <Table.Column><h1></h1></Table.Column>
                         <Table.Column></Table.Column>
                     </Table.Header>
                     <Table.Body>
@@ -132,47 +133,17 @@ export default function Business() {
                 <ModelAddBusiness />
 
                 <Spacer />
-                <Table
-                    aria-label="Example table with static content"
-                    css={{
-                        height: "auto",
-                        minWidth: "100%",
-                    }}
-                >
-
-                    <Table.Header>
-                        <Table.Column></Table.Column>
-                        <Table.Column>
-                            <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                        </Table.Column>
-                        <Table.Column>
-                            <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                        </Table.Column>
-                        <Table.Column>
-                            <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                        </Table.Column>
-                        <Table.Column></Table.Column>
-                        <Table.Column></Table.Column>
-                    </Table.Header>
-                    <Table.Body>
-                        <Table.Row key="1">
-                            <Table.Cell></Table.Cell>
-                            <Table.Cell>
-                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Cell>
-                            <Table.Cell>
-                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Cell>
-                            <Table.Cell>
-                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Cell>
-                            <Table.Cell>
-
-                            </Table.Cell>
-                            <Table.Cell></Table.Cell>
-                        </Table.Row>
-                    </Table.Body>
-                </Table>
+                <Grid.Container gap={9}>
+                    <Grid xs={4}>
+                        <ModelTableBusiness/>
+                    </Grid>
+                    <Grid xs={4}>
+                        <ModelTableBusiness/>
+                    </Grid>
+                    <Grid xs={4}>
+                        <ModelTableBusiness/>
+                    </Grid>
+                </Grid.Container>
 
             </Container>
         </Container>

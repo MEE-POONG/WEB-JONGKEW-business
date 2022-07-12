@@ -5,6 +5,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import Tooltip from '@mui/material/Tooltip';
+import ModelDateBusiness from '@/components/business/ModelDateBusiness'
+import ModelTimeBusiness from '@/components/business/ModelTimeBusiness'
 
 function ValueLabelComponent(props) {
     const { children, value } = props;
@@ -107,7 +109,8 @@ export default function ModelAddBusiness() {
                             />
                         </Grid>
                         <Grid xs={4}>
-                        <Typography gutterBottom>iOS</Typography>
+                        
+                        <Typography gutterBottom>เลือกจำนวนที่นั่งสูงสุด</Typography>
                         <Slider 
                         defaultValue={50} 
                         aria-label="Default" 
@@ -115,25 +118,11 @@ export default function ModelAddBusiness() {
                         />
                         </Grid>
                         <Grid xs={4}>
-                            <Input
-                                clearable
-                                fullWidth
-                                color="primary"
-                                size="lg"
-                                label="วันที่จะเข้าใช้บริการได้"
-                                placeholder="วันที่จะเข้าใช้บริการได้"
-                            />
+                            <ModelDateBusiness/>
                         </Grid>
                         
                         <Grid xs={4}>
-                            <Input
-                                clearable
-                                fullWidth
-                                color="primary"
-                                size="lg"
-                                label="เวลาที่เข้าใช้บริการได้"
-                                placeholder="เวลาที่เข้าใช้บริการได้"
-                            />
+                            <ModelTimeBusiness/>
                         </Grid>
 
                     </Grid.Container>
