@@ -30,7 +30,6 @@ export default function App() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Container>
-                ยินดีต้อนรับ
                 <h1>JONGKEW <AiOutlineUser size={50} align={"right"} /> </h1>
 
                 <Spacer />
@@ -47,7 +46,7 @@ export default function App() {
                     css={{
                         height: "auto",
                         minWidth: "100%",
-                       
+
                     }}
                 >
                     <Table.Header>
@@ -55,8 +54,8 @@ export default function App() {
                         <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
-                        <Table.Column><h1>ร้านค้าต่างๆ</h1></Table.Column>
                         <Table.Column></Table.Column>
+                        <Table.Column><h1>ร้านค้าต่างๆ</h1></Table.Column>
                     </Table.Header>
                     <Table.Body>
                         <Table.Row key="1">
@@ -118,9 +117,7 @@ export default function App() {
                             fullWidth
                         />
 
-                        <svg style={{ cursor: 'pointer', width: '24px', marginLeft: '10px' }} onClick={() => console.log("KKK")} xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
+
                     </Row>
                 </Grid>
 
@@ -129,7 +126,7 @@ export default function App() {
                 <Table
                     aria-label="Example table with static content"
                     css={{
-                        height: "20%",
+                        height: "auto",
                         minWidth: "100%",
                         backgroundColor: "gray",
                     }}
@@ -140,26 +137,19 @@ export default function App() {
                         <Table.Column><h3>รูปร้าน</h3></Table.Column>
                         <Table.Column><h3>ชื่อร้าน</h3></Table.Column>
                         <Table.Column><h3>เวลาที่เข้าใช้บริการได้</h3></Table.Column>
-                        <Table.Column></Table.Column>
-                        <Table.Column></Table.Column>
                     </Table.Header>
                     <Table.Body>
                         <Table.Row key="1">
                             <Table.Cell></Table.Cell>
-                            <Table.Cell>
-                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Cell>
-                            <Table.Cell>
-                                {/* <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} /> */}
-                            </Table.Cell>
-                            <Table.Cell>
-                                {/* <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} /> */}
-                            </Table.Cell>
-                            <Table.Cell>
-
-                            </Table.Cell>
-                            <Table.Cell></Table.Cell>
+                            <Table.Cell> <Image src="/img/jq.png" alt="Vercel Logo" width={200} height={200} css={{ objectFill: "none" }} /></Table.Cell>
+                            <Table.Cell> ร้านดอกไม่กาแฟ</Table.Cell>
+                            <Table.Cell> 21.00-00.00</Table.Cell>
                         </Table.Row>
+                        {/* <Table.Row key="2">
+                            <Table.Cell><Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} /></Table.Cell>
+                            <Table.Cell>ร้านดอกไม่กาแฟ</Table.Cell>
+                            <Table.Cell>21.00-00.00</Table.Cell>
+                        </Table.Row> */}
                     </Table.Body>
                 </Table>
 
