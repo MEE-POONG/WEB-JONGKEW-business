@@ -26,7 +26,14 @@ export default function ModelAddBusiness() {
             >
                 <Modal.Header>
                     <Text b size={18}>
-                        
+                    <Input
+                                clearable
+                                fullWidth
+                                color="primary"
+                                size="lg"
+                                label="ชื่อร้าน"
+                                placeholder="ชื่อร้าน"
+                            />
                     </Text>
                 </Modal.Header>
                 <Modal.Body>
@@ -35,10 +42,22 @@ export default function ModelAddBusiness() {
                             <Input
                                 clearable
                                 fullWidth
+                                type="image"
                                 color="primary"
                                 size="lg"
-                                label="ผู้แนะนำ"
-                                placeholder="ผู้แนะนำ"
+                                label="เพิ่มรูปภาพ2"
+                                placeholder="เพิ่มรูปภาพ2"
+                            />
+                        </Grid>
+                        <Grid>
+                            <Input
+                                clearable
+                                fullWidth
+                                type="image"
+                                color="primary"
+                                size="lg"
+                                label="เพิ่มรูปภาพ3"
+                                placeholder="เพิ่มรูปภาพ3"
                             />
                         </Grid>
                         <Grid>
@@ -47,8 +66,9 @@ export default function ModelAddBusiness() {
                                 fullWidth
                                 color="primary"
                                 size="lg"
-                                label="Username"
-                                placeholder="Username"
+                                type="image"
+                                label="เพิ่มรูปภาพ4"
+                                placeholder="เพิ่มรูปภาพ4"
                             />
                         </Grid>
                         <Grid>
@@ -57,8 +77,8 @@ export default function ModelAddBusiness() {
                                 fullWidth
                                 color="primary"
                                 size="lg"
-                                label="Password"
-                                placeholder="Password"
+                                label="เพิ่มรายละเอียดร้าน"
+                                placeholder="เพิ่มรายละเอียดร้าน"
                             />
                         </Grid>
                         <Grid>
@@ -67,8 +87,8 @@ export default function ModelAddBusiness() {
                                 fullWidth
                                 color="primary"
                                 size="lg"
-                                label="Firstname"
-                                placeholder="Firstname"
+                                label="เลือกจำนวนที่นั่ง"
+                                placeholder="เลือกจำนวนที่นั่ง"
                             />
                         </Grid>
                         <Grid>
@@ -77,8 +97,8 @@ export default function ModelAddBusiness() {
                                 fullWidth
                                 color="primary"
                                 size="lg"
-                                label="Lastname"
-                                placeholder="Lastname"
+                                label="วันที่จะเข้าใช้บริการได้"
+                                placeholder="วันที่จะเข้าใช้บริการได้"
                             />
                         </Grid>
                         <Grid>
@@ -87,65 +107,21 @@ export default function ModelAddBusiness() {
                                 fullWidth
                                 color="primary"
                                 size="lg"
-                                label="Bank"
-                                placeholder="Bank"
+                                label="เวลาที่เข้าใช้บริการได้"
+                                placeholder="เวลาที่เข้าใช้บริการได้"
                             />
                         </Grid>
-                        <Grid>
-                            <Input
-                                clearable
-                                fullWidth
-                                color="primary"
-                                size="lg"
-                                label="Bank Account"
-                                placeholder="Bank Account"
-                            />
-                        </Grid>
-                        <Grid>
-                            <Input
-                                clearable
-                                fullWidth
-                                color="primary"
-                                size="lg"
-                                label="Tel"
-                                placeholder="Tel"
-                            />
-                        </Grid>
-                        <Grid>
-                            <Input
-                                clearable
-                                fullWidth
-                                color="primary"
-                                size="lg"
-                                label="Line"
-                                placeholder="Line"
-                            />
-                        </Grid>
+                        
                     </Grid.Container>
                     <Spacer />
-                    <center> <Text b size={18}> เลือกระดับเเอดมิน </Text> </center>
-                    <Spacer />
-                    <Grid.Container gap={2} justify="center">
-                        <Radio.Group value="1" row>
-                            <Radio value="1">
-                                Agent<Radio.Description>Agent Level</Radio.Description>
-                            </Radio>
-                            <Radio value="2">
-                                Master<Radio.Desc>Master Level</Radio.Desc>
-                            </Radio>
-                            <Radio value="3">
-                                Senior<Radio.Desc>Senior Level</Radio.Desc>
-                            </Radio>
-                            <Spacer />
-                        </Radio.Group>
-                    </Grid.Container>
+                    
                 </Modal.Body>
                 <Modal.Footer>
                     <Button auto flat color="error" onClick={closeHandler}>
                         Close
                     </Button>
                     <Button auto onClick={closeHandler}>
-                        เพิ่มเเอดมิน
+                        เพิ่ม
                     </Button>
                 </Modal.Footer>
             </Modal>
