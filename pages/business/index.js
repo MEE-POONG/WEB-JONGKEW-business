@@ -7,7 +7,8 @@ import { AiOutlineUser, AiFillMessage, AiOutlineHistory, AiTwotoneTags, AiTwoton
 import Image from 'next/image';
 import Layout from "@/components/layout";
 import ModelAddBusiness from "@/components/business/ModelAddBusiness";
-import ModelEditPartner from "@/components/partner/ModelEditPartner";
+import ModelSlideBusiness from "@/components/business/ModelSlideBusiness"
+import ModelTableBusiness from "@/components/business/ModelTableBusiness"
 import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip, Progress, User } from "@nextui-org/react";
 import Head from "next/head";
 import { useState } from 'react'
@@ -74,7 +75,7 @@ export default function Business() {
                         <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
                         <Table.Column></Table.Column>
-                        <Table.Column><h1>ป้ายโปรโมท</h1></Table.Column>
+                        <Table.Column><h1></h1></Table.Column>
                         <Table.Column></Table.Column>
                     </Table.Header>
                     <Table.Body>
