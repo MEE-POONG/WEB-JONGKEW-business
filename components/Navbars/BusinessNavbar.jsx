@@ -46,7 +46,7 @@ export default function BusinessNavbar() {
                   className="me-2"
                   aria-label="Search"
                 />
-                {/* <AiFillMail>AiFillMail> */}
+                <AiFillMail/>
               </Form>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
