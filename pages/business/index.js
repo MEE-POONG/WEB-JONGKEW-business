@@ -8,25 +8,81 @@ import React from "react";
 // import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
 
 // layout for page
+import { AiOutlinePlus, AiFillTags, AiOutlineHistory, AiOutlineBell, } from "react-icons/ai";
+import { BsFillMegaphoneFill, BsFillChatDotsFill, } from "react-icons/Bs";
 import Table from 'react-bootstrap/Table';
 import Business from "../../layouts/Business";
-import ModelCarouselBusiness from "../../components/business/ModelCarouselsBusinee";
-import { Container } from "react-bootstrap";
+import SlideCarouselsBusinee from "../../components/business/SlideCarouselsBusinee";
+import IndexCardBusinee from "../../components/business/IndexCardBusinee";
+import ModelButtonBusinee from "../../components/business/ModelButtonBusinee";
+
+import { Container  } from "react-bootstrap";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
+import Stack from 'react-bootstrap/Stack';
 
 export default function Dashboard() {
   return (
     <Container className="Business">
-    <Table striped="columns">
-      <thead>
-        <tr>
-          
-          <th><ModelCarouselBusiness/></th>
-          
-        </tr>
-      </thead>
+      <Table striped="columns">
+        <thead>
+          <tr>
+
+            <th><SlideCarouselsBusinee /></th>
+
+          </tr>
+        </thead>
       </Table>
+      <Stack gap={4}>
+        <ModelButtonBusinee/>
+      <Row xs="auto">
+        <Col>
+          <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">แชท</Tooltip>}>
+            <span className="d-inline-block">
+              <BsFillChatDotsFill size={30}/>
+            </span>
+          </OverlayTrigger>
+        </Col>
+        <Col><OverlayTrigger overlay={<Tooltip id="tooltip-disabled">โปรโมชั่น</Tooltip>}>
+          <span className="d-inline-block">
+            <AiFillTags size={30}/>
+          </span>
+        </OverlayTrigger>
+        </Col>
+        <Col>
+          <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">ประวัติ</Tooltip>}>
+            <span className="d-inline-block">
+              <AiOutlineHistory size={30}/>
+            </span>
+          </OverlayTrigger>
+        </Col>
+        <Col >
+          <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">แจ้งเตือน</Tooltip>}>
+            <span className="d-inline-block">
+              <AiOutlineBell size={30}/>
+            </span>
+          </OverlayTrigger>
+        </Col>
+      </Row>
+
     
+      <Row>
+        <Col><IndexCardBusinee/></Col>
+        <Col><IndexCardBusinee/></Col>
+        <Col><IndexCardBusinee/></Col>
+      </Row>
       
+      <Row>
+        <Col><IndexCardBusinee/></Col>
+        <Col><IndexCardBusinee/></Col>
+        <Col><IndexCardBusinee/></Col>
+      </Row>
+
+
+      </Stack>
     </Container>
   );
 }
