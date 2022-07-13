@@ -3,6 +3,7 @@ import { AiOutlinePlus, AiFillTags, AiOutlineHistory, AiOutlineBell, } from "rea
 import { BsFillMegaphoneFill, BsFillChatDotsFill, } from "react-icons/Bs";
 import Business from "../../layouts/Business";
 import { Button, Container, Row, Col, } from "react-bootstrap";
+import ModaladdPromotion from "../../components/business/ModaladdPromotion";
 
 
 
@@ -20,9 +21,9 @@ export default function Dashboard() {
           <Col></Col>
         </Row>
         <Row>
-          <Col><h2><button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalCenter">
-          เพิ่มโปรโมชั่นร้าน<AiOutlinePlus /> 
-          </button></h2> </Col>            
+          <Col>
+          
+          </Col>            
           <Col></Col>
           <Col></Col>
         </Row>
@@ -58,23 +59,7 @@ export default function Dashboard() {
             /></Col>
           </Row>
           <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
+  
 </div>
 
         </div>
