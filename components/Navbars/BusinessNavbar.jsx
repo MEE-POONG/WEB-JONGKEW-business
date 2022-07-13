@@ -17,13 +17,9 @@ export default function BusinessNavbar() {
           <Navbar.Brand href="#">
             <Image src="https://i.imgur.com/FPczyH9.png" width={200} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="offcanvasNavbar" >
-          <Image src="https://i.imgur.com/FPczyH9.png" width={200} className="rounded-circle"/>Example heading
-          {/* <User
-                src="https://i.pravatar.cc/150?u=a092581d4ef9026700d"
-                name="Kristen Copper"
-                size="lg"
-              /> */}555
+          <Navbar.Toggle aria-controls="offcanvasNavbar" className="p-1 rounded-circle" >
+          <Image src="https://i.imgur.com/paRMBLb.jpeg" width={50} height={50} className="object-cover"/>
+          
               </Navbar.Toggle>
           <Navbar.Offcanvas
             id="offcanvasNavbar"
@@ -34,11 +30,7 @@ export default function BusinessNavbar() {
               <Offcanvas.Title id="offcanvasNavbarLabel">ข้อมูลส่วนตัว</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-            {/* <User
-                src="https://i.pravatar.cc/150?u=a092581d4ef9026700d"
-                name="Kristen Copper"
-                size="lg"
-              /> */}
+            
 
               <Form className="d-flex">
                 <FormControl
@@ -53,7 +45,6 @@ export default function BusinessNavbar() {
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
-      <Link href={"/"}> home </Link>
     </>
   );
 }
