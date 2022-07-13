@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { User } from '@nextui-org/react';
+
 import { AiFillMail } from "react-icons/ai";
 
 // components
@@ -18,11 +18,11 @@ export default function BusinessNavbar() {
             <Image src="https://i.imgur.com/FPczyH9.png" width={200} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" >
-          <User
+          {/* <User
                 src="https://i.pravatar.cc/150?u=a092581d4ef9026700d"
                 name="Kristen Copper"
                 size="lg"
-              />
+              /> */}555
               </Navbar.Toggle>
           <Navbar.Offcanvas
             id="offcanvasNavbar"
@@ -33,11 +33,11 @@ export default function BusinessNavbar() {
               <Offcanvas.Title id="offcanvasNavbarLabel">ข้อมูลส่วนตัว</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-            <User
+            {/* <User
                 src="https://i.pravatar.cc/150?u=a092581d4ef9026700d"
                 name="Kristen Copper"
                 size="lg"
-              />
+              /> */}
 
               <Form className="d-flex">
                 <FormControl
