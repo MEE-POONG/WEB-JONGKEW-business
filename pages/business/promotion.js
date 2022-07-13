@@ -1,27 +1,46 @@
 import React from "react";
-import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlinePlus, AiFillTags, AiOutlineHistory, AiOutlineBell, } from "react-icons/ai";
+import { BsFillMegaphoneFill } from "react-icons/Bs";
 import Business from "../../layouts/Business";
+import { Button, Container, Row, Col, } from "react-bootstrap";
+
+
 
 export default function Dashboard() {
   return (
     <>
-    <h2>เพิ่มโปรโมชั่นร้าน<AiOutlinePlus /></h2>
-      <div className="flex flex-wrap">
-        <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-          {/* <CardLineChart /> */}
+      <h2>เพิ่มโปรโมชั่นร้าน<AiOutlinePlus /></h2>
+
+    <Container>
+      <Row>
+        <Col></Col>
+        <Col><BsFillMegaphoneFill size={30} /><h1>โปรโมชั่น</h1></Col>
+      </Row>
+      <Row>
+        <Col></Col>
+        <Col></Col>
+        <Col></Col>
+      </Row>
+    </Container>
+  
+
+
+
+      <Container className="promotion">
+        <div>
+          <Button variant="white"><AiOutlineHistory size={30} /></Button>{' '}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Button variant="white"><AiFillTags size={30} /></Button>{' '}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Button variant="white"><AiOutlineHistory size={30} /></Button>{' '}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Button variant="white"><AiOutlineBell size={30} /></Button>{' '}
+
         </div>
-        <div className="w-full xl:w-4/12 px-4">
-          {/* <CardBarChart /> */}
-        </div>
-      </div>
-      <div className="flex flex-wrap mt-4">
-        <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-          {/* <CardPageVisits /> */}
-        </div>
-        <div className="w-full xl:w-4/12 px-4">
-          {/* <CardSocialTraffic /> */}
-        </div>
-      </div>
+
+
+
+      </Container>
     </>
   );
 }
