@@ -9,7 +9,7 @@ import React from "react";
 
 // layout for page
 
-import Business from "../../layouts/Business";
+import Admin from "../../layouts/Admin.js";
 
 export default function Dashboard() {
   return (
@@ -35,4 +35,4 @@ export default function Dashboard() {
   );
 }
 
-Dashboard.layout = Business;
+Dashboard.layout = Admin;
