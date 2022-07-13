@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.9",
     "bootstrap": "^5.1.3",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-bootstrap": "^2.2.3",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "eslint": "8.12.0",
