@@ -4,20 +4,21 @@ import Link from "next/link";
 import { AiFillMail } from "react-icons/ai";
 
 // components
-import { Container, Navbar, Nav, NavDropdown, Offcanvas, Form, FormControl, Button, Image } from 'react-bootstrap';
+import { Container, Navbar, Nav, NavDropdown, Offcanvas, Form, FormControl, Button, Image, Badge } from 'react-bootstrap';
 
 
 export default function BusinessNavbar() {
   // const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <Navbar bg="light" variant="light" expand={false}>
+      <Navbar bg="secondary" variant="light" expand={false}>
         <Container  >
 
           <Navbar.Brand href="#">
             <Image src="https://i.imgur.com/FPczyH9.png" width={200} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" >
+          <Image src="https://i.imgur.com/FPczyH9.png" width={200} className="rounded-circle"/>Example heading
           {/* <User
                 src="https://i.pravatar.cc/150?u=a092581d4ef9026700d"
                 name="Kristen Copper"
