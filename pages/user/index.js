@@ -129,9 +129,6 @@ export default function Business() {
                     </Table.Body>
                 </Table>
                 <Spacer />
-
-           
-
                 <Spacer />
                 <Grid.Container gap={9}>
                     <Grid xs={4}>
