@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import AboutBusinee from "../../components/business/AboutBusinee";
 
 import { AiFillMail } from "react-icons/ai";
 
@@ -30,17 +31,7 @@ export default function BusinessNavbar() {
               <Offcanvas.Title id="offcanvasNavbarLabel">ข้อมูลส่วนตัว</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-            
-
-              <Form className="d-flex">
-                <FormControl
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <AiFillMail/>
-              </Form>
+            <AboutBusinee/>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>

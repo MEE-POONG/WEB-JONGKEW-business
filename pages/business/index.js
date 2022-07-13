@@ -15,7 +15,6 @@ import Business from "../../layouts/Business";
 import SlideCarouselsBusinee from "../../components/business/SlideCarouselsBusinee";
 import IndexCardBusinee from "../../components/business/IndexCardBusinee";
 import ModelButtonBusinee from "../../components/business/ModelButtonBusinee";
-
 import { Container  } from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -37,7 +36,6 @@ export default function Dashboard() {
         </thead>
       </Table>
       <Stack gap={4}>
-        <ModelButtonBusinee/>
       <Row xs="auto">
         <Col>
           <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">แชท</Tooltip>}>
@@ -67,7 +65,11 @@ export default function Dashboard() {
           </OverlayTrigger>
         </Col>
       </Row>
-
+      <Row>
+        <Col md={4}><ModelButtonBusinee/></Col>
+    
+      </Row>
+      
     
       <Row>
         <Col><IndexCardBusinee/></Col>

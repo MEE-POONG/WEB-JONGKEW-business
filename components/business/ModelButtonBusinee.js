@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 
+
 function ModelButtonBusinee() {
   const [show, setShow] = useState(false);
 
@@ -10,8 +11,8 @@ function ModelButtonBusinee() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+      <Button  variant="secondary" onClick={handleShow}>
+        เพิ่มร้าน 
       </Button>
 
       <Modal show={show} onHide={handleClose}>
