@@ -13,7 +13,6 @@ import { Col, Container, Grid, Input, Row, Spacer, Table, Tooltip, Progress, Use
 import Head from "next/head";
 import { useState } from 'react'
 
-
 export default function Business() {
     const [visible, setVisible] = useState(false);
 
@@ -34,7 +33,7 @@ export default function Business() {
                     <div class="row">
                         <div class="col">
                             ยินดีต้อนรับ
-                            <h1>JONGKEW </h1>
+                            <h1> JONGKEW </h1>
                         </div>
                         <div class="col-md-auto">
                         </div>
@@ -134,47 +133,17 @@ export default function Business() {
                 <ModelAddBusiness />
 
                 <Spacer />
-                    <Table
-                        aria-label="Example table with static content"
-                        css={{
-                            height: "auto",
-                            minWidth: "100%",
-                        }}
-                    >
-
-                        <Table.Header>
-                            <Table.Column></Table.Column>
-                            <Table.Column>
-                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Column>
-                            <Table.Column>
-                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Column>
-                            <Table.Column>
-                                <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                            </Table.Column>
-                            <Table.Column></Table.Column>
-                            <Table.Column></Table.Column>
-                        </Table.Header>
-                        <Table.Body>
-                            <Table.Row key="1">
-                                <Table.Cell></Table.Cell>
-                                <Table.Cell>
-                                    <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                                </Table.Cell>
-                                <Table.Cell>
-                                    <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                                </Table.Cell>
-                                <Table.Cell>
-                                    <Image src="/img/jq.png" alt="Vercel Logo" width={250} height={250} css={{ objectFill: "none" }} />
-                                </Table.Cell>
-                                <Table.Cell>
-
-                                </Table.Cell>
-                                <Table.Cell></Table.Cell>
-                            </Table.Row>
-                        </Table.Body>
-                    </Table>
+                <Grid.Container gap={9}>
+                    <Grid xs={4}>
+                        <ModelTableBusiness/>
+                    </Grid>
+                    <Grid xs={4}>
+                        <ModelTableBusiness/>
+                    </Grid>
+                    <Grid xs={4}>
+                        <ModelTableBusiness/>
+                    </Grid>
+                </Grid.Container>
 
             </Container>
         </Container>
