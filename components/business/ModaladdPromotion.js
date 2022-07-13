@@ -1,33 +1,36 @@
 import Button from 'react-bootstrap/Button';
+import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
+import { AiOutlinePlus, AiFillTags, AiOutlineHistory, AiOutlineBell, } from "react-icons/ai";
 
-function ModaladdPromotion(props) {
+function ModaladdPromotion() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-   <>
-   <Button>เพิ่มโปรโมชั่นร้าน<AiOutlinePlus /> </Button>
-    <Modal
-      {...props}   
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-   </>
+
+    <>
+      
+      <Button variant="white" onClick={handleShow}>
+        <h4>เพิ่มโปรโมชั่นร้าน<AiOutlinePlus size={25} /></h4>
+      </Button>
+
+      <Modal  size="lg" show={show} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>อัปโหลดโปรโมชั่นร้าน&nbsp;(1237*254)</Modal.Title>
+        </Modal.Header>
+        <Modal.Body  style={{minHeight:"500px"}}><input type="file" id="myfile" name="myfile"/></Modal.Body>
+        <Modal.Footer>
+          
+          <Button variant="primary" onClick={handleClose}>
+            บันทึก
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
   );
 }
+
+export default ModaladdPromotion;

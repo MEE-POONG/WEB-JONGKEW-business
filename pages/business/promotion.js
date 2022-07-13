@@ -22,7 +22,7 @@ export default function Dashboard() {
         </Row>
         <Row>
           <Col>
-          
+          <ModaladdPromotion/>
           </Col>            
           <Col></Col>
           <Col></Col>
