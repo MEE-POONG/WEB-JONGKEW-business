@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
 .profile{
  margin:0;
- padding: 0;
+ padding: 10;
  outline: 0;
+ 
 }
 .profile .filter {
  position: absolute;
@@ -11,6 +12,7 @@
  bottom: 0;
  right: 0;
  z-index: 1;
+ 
  
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e94ca1",endColorstr="#c74ae9",GradientType=1);
 opacity: .7;
@@ -30,16 +32,18 @@ opacity: .7;
 
 }
 .profile td , .profile th{
- padding: 30px 20px;
+ padding: 30px 5px;
  text-align: center;
+ 
+ 
  
 
 }
 .profile th{
 
- color: #fafafa;
+ color: #ffffff;
  font-family: 'Open Sans',Sans-serif;
- font-weight: 200;
+ font-weight: 2000;
  text-transform: uppercase;
 
 }
@@ -49,5 +53,5 @@ opacity: .7;
  font-family: 'Montserrat', sans-serif;
 }
 .profile tr:nth-child(even){
- background-color: #eeeeee;
+ background-color: #d0d0d0;
 }
