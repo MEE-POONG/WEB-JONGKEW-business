@@ -12,14 +12,15 @@ import { AiOutlinePlus, AiFillTags, AiOutlineHistory, AiOutlineBell, } from "rea
 import { BsFillMegaphoneFill, BsFillChatDotsFill, } from "react-icons/Bs";
 import Table from 'react-bootstrap/Table';
 import Business from "../../layouts/Business";
-import ModelCarouselBusiness from "../../components/business/ModelCarouselsBusinee";
-import ModelCardBusinee from "../../components/business/ModelCardBusinee";
-import { Container } from "react-bootstrap";
+import SlideCarouselsBusinee from "../../components/business/SlideCarouselsBusinee";
+import IndexCardBusinee from "../../components/business/IndexCardBusinee";
+import { Container  } from "react-bootstrap";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import Stack from 'react-bootstrap/Stack';
 
 export default function Dashboard() {
   return (
@@ -28,11 +29,12 @@ export default function Dashboard() {
         <thead>
           <tr>
 
-            <th><ModelCarouselBusiness /></th>
+            <th><SlideCarouselsBusinee /></th>
 
           </tr>
         </thead>
       </Table>
+      <Stack gap={4}>
       <Row xs="auto">
         <Col>
           <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">แชท</Tooltip>}>
@@ -63,10 +65,21 @@ export default function Dashboard() {
         </Col>
       </Row>
 
-<ModelCardBusinee/>
+    
+      <Row>
+        <Col><IndexCardBusinee/></Col>
+        <Col><IndexCardBusinee/></Col>
+        <Col><IndexCardBusinee/></Col>
+      </Row>
+      
+      <Row>
+        <Col><IndexCardBusinee/></Col>
+        <Col><IndexCardBusinee/></Col>
+        <Col><IndexCardBusinee/></Col>
+      </Row>
 
 
-
+      </Stack>
     </Container>
   );
 }
