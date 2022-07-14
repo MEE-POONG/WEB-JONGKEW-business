@@ -19,7 +19,7 @@ export default function BusinessNavbar() {
             <Image src="https://i.imgur.com/FPczyH9.png" width={200} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" className="p-1 rounded-circle" >
-          <Image src="https://i.imgur.com/paRMBLb.jpeg" width={50} height={50} className="object-cover"/>
+          <Image src="https://i.imgur.com/paRMBLb.jpeg" width={50} height={50} className="object-cover rounded-circle"/>
           
               </Navbar.Toggle>
           <Navbar.Offcanvas
