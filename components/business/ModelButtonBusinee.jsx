@@ -33,7 +33,7 @@ function ModelButtonBusinee() {
               <Col md={4}></Col>
               <Col md={4}>
                 <FloatingLabel controlId="floatingInputGrid" label="ชื่อร้าน">
-                  <Form.Control type="text" />
+                  <Form.Control type="text" placeholder="text" />
                 </FloatingLabel>
               </Col>
               <Col md={4}></Col>
@@ -53,10 +53,27 @@ function ModelButtonBusinee() {
                 <Form.Control type="file" />
               </Col>
             </Row>
+            <FloatingLabel controlId="floatingTextarea2" label="เพิ่มรายละเอียดร้าน">
+        <Form.Control
+          as="textarea"
+          placeholder="Leave a comment here"
+          style={{ height: '100px' }}
+        />
+      </FloatingLabel>
             <Row>
               <Col md={4}>
-                <Form.Label>Range</Form.Label>
+                <Form.Label>เลือกจำนวนที่นั่งสูงสุด</Form.Label>
                 <Form.Range />
+              </Col>
+              <Col md={4}>
+                <FloatingLabel controlId="floatingInputGrid" label="วันที่จะเข้าใช้บริการได้">
+                  <Form.Control type="text" placeholder="text" />
+                </FloatingLabel>
+              </Col>
+              <Col md={4}>
+                <FloatingLabel controlId="floatingInputGrid" label="เวลาที่เข้าใช้บริการได้">
+                  <Form.Control type="text" placeholder="text"/>
+                </FloatingLabel>
               </Col>
             </Row>
 
