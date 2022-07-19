@@ -33,11 +33,11 @@ export default function BusinessList() {
 
                     <Form>
                         <Form.Group className="mb-10" controlId="formBasicEmail">
-                            <Form.Label>ค้นหา</Form.Label>
-                            <Form.Control type="email" placeholder="search" />
-                            {/* <Form.Text className="text-muted">
-                                We'll never share your email with anyone else.
-                            </Form.Text> */}
+                            <Form.Control 
+                            type="email" 
+                            placeholder="ค้นหา" />
+
+                           
                         </Form.Group>
 
                     </Form>
