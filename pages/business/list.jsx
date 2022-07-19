@@ -39,17 +39,8 @@ export default function BusinessList() {
                             aria-describedby="basic-addon1"
                         />
                     </InputGroup>
-                    <Form>
-                        <Form.Group className="mb-10" controlId="formBasicEmail">
-                            <Form.Control
-                                type="email"
-                                placeholder="ค้นหา" />
-
-
-                        </Form.Group>
-
-                    </Form>
-
+                    
+                    
 
 
                     <div className="center">
