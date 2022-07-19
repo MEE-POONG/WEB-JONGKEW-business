@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import Business from "../../layouts/Business";
 import Table from 'react-bootstrap/Table';
 import Image from 'react-bootstrap/Image'
-import { AiOutlinePlus, AiFillTags, AiOutlineHistory, AiOutlineBell, AiFillMail } from "react-icons/ai";
+import { AiOutlinePlus, AiFillTags, AiOutlineHistory, AiOutlineBell, AiFillMail,AiOutlineSearch } from "react-icons/ai";
 import { BsFillMegaphoneFill, BsFillChatDotsFill } from "react-icons/Bs";
 import { GiMagnifyingGlass } from "react-icons/gi";
 import { Button, Row, Col, } from "react-bootstrap";
@@ -32,7 +32,7 @@ export default function BusinessList() {
                         <Col><Button variant="white"><AiOutlineBell size={30} /></Button>{' '}</Col>
                     </Row>
                     <InputGroup className="mb-3">
-                        <InputGroup.Text id="basic-addon1"><GiMagnifyingGlass size={30} /></InputGroup.Text>
+                        <InputGroup.Text id="basic-addon1"><AiOutlineSearch size={30} /></InputGroup.Text>
                         <Form.Control
                             placeholder="Search"
                             aria-label="Search"
