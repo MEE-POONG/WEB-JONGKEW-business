@@ -6,9 +6,10 @@ import Image from 'react-bootstrap/Image'
 import { AiOutlinePlus, AiFillTags, AiOutlineHistory, AiOutlineBell, AiFillMail } from "react-icons/ai";
 import { BsFillMegaphoneFill,BsFillChatDotsFill } from "react-icons/Bs";
 import { GiMagnifyingGlass } from "react-icons/gi";
-import { Button, Row, Col } from "react-bootstrap";
+import { Button, Row, Col, } from"react-bootstrap";
 import { Navbar, Nav, NavDropdown, Offcanvas, Form, FormControl, Badge } from 'react-bootstrap';
 import Stack from 'react-bootstrap/Stack';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 
 
@@ -27,15 +28,27 @@ export default function BusinessList() {
                         <Col><Button variant="white"><AiOutlineHistory size={30} /></Button>{' '}</Col>
                         <Col><Button variant="white"><AiOutlineBell size={30} /></Button>{' '}</Col>
                     </Row>
-                    <Form className="d-flex"><GiMagnifyingGlass size={20}/>ค้นหา
-                        <FormControl
-                            type="search"
-                            placeholder="Search"
-                            className="me-5"
-                            aria-label="Search"
-                        />
-                        {/* <AiFillMail /> */}
-                    </Form>
+
+                    <InputGroup className="mb-3">
+        <InputGroup.Text id="basic-addon1"><GiMagnifyingGlass  size={30} /></InputGroup.Text>
+        <Form.Control
+          placeholder="Search"
+          aria-label="Search"
+          aria-describedby="basic-addon1"
+        />
+      </InputGroup>
+
+
+
+
+
+
+
+
+
+
+
+
                     <div className="center">
                         <Table striped bordered hover className="text-center">
                             <thead>
