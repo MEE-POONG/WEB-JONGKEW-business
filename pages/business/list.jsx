@@ -4,9 +4,9 @@ import Business from "../../layouts/Business";
 import Table from 'react-bootstrap/Table';
 import Image from 'react-bootstrap/Image'
 import { AiOutlinePlus, AiFillTags, AiOutlineHistory, AiOutlineBell, AiFillMail } from "react-icons/ai";
-import { BsFillMegaphoneFill,BsFillChatDotsFill } from "react-icons/Bs";
+import { BsFillMegaphoneFill, BsFillChatDotsFill } from "react-icons/Bs";
 import { GiMagnifyingGlass } from "react-icons/gi";
-import { Button, Row, Col } from "react-bootstrap";
+import { Button, Row, Col, } from "react-bootstrap";
 import { Navbar, Nav, NavDropdown, Offcanvas, Form, FormControl, Badge } from 'react-bootstrap';
 import Stack from 'react-bootstrap/Stack';
 
@@ -19,6 +19,9 @@ export default function BusinessList() {
                 className="text-center"><h1>ร้านค้าต่างๆ</h1>
             </div>
 
+
+
+
             <Container className="business-list">
                 <Stack gap={3}>
                     <Row xs="auto">
@@ -27,15 +30,20 @@ export default function BusinessList() {
                         <Col><Button variant="white"><AiOutlineHistory size={30} /></Button>{' '}</Col>
                         <Col><Button variant="white"><AiOutlineBell size={30} /></Button>{' '}</Col>
                     </Row>
-                    <Form className="d-flex"><GiMagnifyingGlass size={20}/>ค้นหา
-                        <FormControl
-                            type="search"
-                            placeholder="Search"
-                            className="me-5"
-                            aria-label="Search"
-                        />
-                        {/* <AiFillMail /> */}
+
+                    <Form>
+                        <Form.Group className="mb-10" controlId="formBasicEmail">
+                            <Form.Label>ค้นหา</Form.Label>
+                            <Form.Control type="email" placeholder="search" />
+                            {/* <Form.Text className="text-muted">
+                                We'll never share your email with anyone else.
+                            </Form.Text> */}
+                        </Form.Group>
+
                     </Form>
+
+
+
                     <div className="center">
                         <Table striped bordered hover className="text-center">
                             <thead>
@@ -92,6 +100,12 @@ export default function BusinessList() {
                                     <td>@twitter</td>
                                 </tr>
                             </tbody>
+
+
+
+
+
+
                         </Table>
                     </div>
                 </Stack>
