@@ -12,12 +12,12 @@ function AboutBusinee() {
         <Col xs lg="2">
          
         </Col>
-        <Col md="auto"><Image src="https://i.imgur.com/paRMBLb.jpeg" width={100} height={100} className="object-cover rounded-circle" /></Col>
+        <Col md="auto" ><Image src="https://i.imgur.com/paRMBLb.jpeg" width={100} height={100} className="object-cover rounded-circle" /></Col>
         <Col xs lg="2"></Col>
       </Row>
       <Row>
         <Col xs={4}></Col>
-        <Col xs={4}> Worapon</Col>
+        <Col xs={4}> Worapon </Col>
         <Col xs={4}></Col>
       </Row>
 

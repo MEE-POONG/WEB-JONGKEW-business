@@ -23,9 +23,9 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Stack from 'react-bootstrap/Stack';
 
-export default function Dashboard() {
+export default function BusinessIndex() {
   return (
-    <Container className="Business">
+    <Container className="business" >
       <Table striped="columns">
         <thead>
           <tr>
@@ -72,15 +72,15 @@ export default function Dashboard() {
       
     
       <Row>
-        <Col><IndexCardBusinee/></Col>
-        <Col><IndexCardBusinee/></Col>
-        <Col><IndexCardBusinee/></Col>
+        <Col xs={4}><IndexCardBusinee/></Col>
+        <Col xs={4}><IndexCardBusinee/></Col>
+        <Col xs={4}><IndexCardBusinee/></Col>
       </Row>
       
       <Row>
-        <Col><IndexCardBusinee/></Col>
-        <Col><IndexCardBusinee/></Col>
-        <Col><IndexCardBusinee/></Col>
+        <Col xs={4}><IndexCardBusinee/></Col>
+        <Col xs={4}><IndexCardBusinee/></Col>
+        <Col xs={4}><IndexCardBusinee/></Col>
       </Row>
 
 
@@ -89,4 +89,4 @@ export default function Dashboard() {
   );
 }
 
-Dashboard.layout = Business;
+BusinessIndex.layout = Business;

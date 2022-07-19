@@ -4,9 +4,9 @@ import Business from "../../layouts/Business";
 import Table from 'react-bootstrap/Table';
 import Image from 'react-bootstrap/Image'
 import { AiOutlinePlus, AiFillTags, AiOutlineHistory, AiOutlineBell, AiFillMail } from "react-icons/ai";
-import { BsFillMegaphoneFill,BsFillChatDotsFill } from "react-icons/Bs";
+import { BsFillMegaphoneFill, BsFillChatDotsFill } from "react-icons/Bs";
 import { GiMagnifyingGlass } from "react-icons/gi";
-import { Button, Row, Col, } from"react-bootstrap";
+import { Button, Row, Col, } from "react-bootstrap";
 import { Navbar, Nav, NavDropdown, Offcanvas, Form, FormControl, Badge } from 'react-bootstrap';
 import Stack from 'react-bootstrap/Stack';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -20,6 +20,9 @@ export default function BusinessList() {
                 className="text-center"><h1>ร้านค้าต่างๆ</h1>
             </div>
 
+
+
+
             <Container className="business-list">
                 <Stack gap={3}>
                     <Row xs="auto">
@@ -28,24 +31,24 @@ export default function BusinessList() {
                         <Col><Button variant="white"><AiOutlineHistory size={30} /></Button>{' '}</Col>
                         <Col><Button variant="white"><AiOutlineBell size={30} /></Button>{' '}</Col>
                     </Row>
-
                     <InputGroup className="mb-3">
-        <InputGroup.Text id="basic-addon1"><GiMagnifyingGlass  size={30} /></InputGroup.Text>
-        <Form.Control
-          placeholder="Search"
-          aria-label="Search"
-          aria-describedby="basic-addon1"
-        />
-      </InputGroup>
+                        <InputGroup.Text id="basic-addon1"><GiMagnifyingGlass size={30} /></InputGroup.Text>
+                        <Form.Control
+                            placeholder="Search"
+                            aria-label="Search"
+                            aria-describedby="basic-addon1"
+                        />
+                    </InputGroup>
+                    <Form>
+                        <Form.Group className="mb-10" controlId="formBasicEmail">
+                            <Form.Control
+                                type="email"
+                                placeholder="ค้นหา" />
 
 
+                        </Form.Group>
 
-
-
-
-
-
-
+                    </Form>
 
 
 
@@ -105,6 +108,12 @@ export default function BusinessList() {
                                     <td>@twitter</td>
                                 </tr>
                             </tbody>
+
+
+
+
+
+
                         </Table>
                     </div>
                 </Stack>
