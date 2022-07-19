@@ -5,7 +5,7 @@ import { Container  } from "react-bootstrap";
 
 function IndexCardBusinee() {
   return (
-    <Container className="IndexCardBusinee" >
+    <  >
    
       <Card>
         <Card.Img variant="top" src="https://i.imgur.com/paRMBLb.jpeg" />
@@ -17,7 +17,7 @@ function IndexCardBusinee() {
         </Card.Body>
         
       </Card>
-</Container>
+</>
   );
 }
 

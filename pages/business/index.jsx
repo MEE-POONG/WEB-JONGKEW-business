@@ -25,8 +25,8 @@ import Stack from 'react-bootstrap/Stack';
 
 export default function BusinessIndex() {
   return (
-    <Container className="business" >
-      <Table striped="columns">
+    <Container className="business-index" >
+      <Table striped="columns ">
         <thead>
           <tr>
 
@@ -35,7 +35,7 @@ export default function BusinessIndex() {
           </tr>
         </thead>
       </Table>
-      <Stack gap={4}>
+      
       <Row xs="auto">
         <Col>
           <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">แชท</Tooltip>}>
@@ -65,26 +65,21 @@ export default function BusinessIndex() {
           </OverlayTrigger>
         </Col>
       </Row>
-      <Row>
-        <Col md={4}><ModelButtonBusinee/></Col>
+      <ModelButtonBusinee/>
+      <Row className="mt-3">
     
-      </Row>
-      
-    
-      <Row>
-        <Col xs={4}><IndexCardBusinee/></Col>
-        <Col xs={4}><IndexCardBusinee/></Col>
-        <Col xs={4}><IndexCardBusinee/></Col>
-      </Row>
-      
-      <Row>
-        <Col xs={4}><IndexCardBusinee/></Col>
-        <Col xs={4}><IndexCardBusinee/></Col>
-        <Col xs={4}><IndexCardBusinee/></Col>
+
+        <Col className="column" xs={4}><IndexCardBusinee/></Col>
+        <Col className="column" xs={4}><IndexCardBusinee/></Col>
+        <Col className="column" xs={4}><IndexCardBusinee/></Col>
+
+        <Col className="column" xs={4}><IndexCardBusinee/></Col>
+        <Col className="column" xs={4}><IndexCardBusinee/></Col>
+        <Col className="column" xs={4}><IndexCardBusinee/></Col>
       </Row>
 
 
-      </Stack>
+      
     </Container>
   );
 }
