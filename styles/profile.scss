@@ -1,11 +1,12 @@
-.bill.container {
+
+.profile.container {
     
     min-height: 80vh;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(255, 255, 255);
     font-family: 'MN CUSTARD'
 }
 h3{
@@ -18,4 +19,20 @@ h3{
 body{
     font-family: 'MN CUSTARD';
 }
+
+th {
+    text-align: center;
+  }
+
+  td {
+    height: 50px;
+    vertical-align: bottom;
+  }
+
+  .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
 
