@@ -1,0 +1,16 @@
+.businesslist{
+.container {
+  tbody {
+    text-align: center;
+  }
+  thead {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+      text-align: middle;
+    }
+  }
+}
