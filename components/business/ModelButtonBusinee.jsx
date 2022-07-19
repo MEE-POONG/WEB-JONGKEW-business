@@ -19,7 +19,7 @@ function ModelButtonBusinee() {
   return (
     <>
 
-      <Button variant="secondary" onClick={handleShow}>
+      <Button variant="secondary" className='mt-3' onClick={handleShow}>
         เพิ่มร้าน
       </Button>
 

@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function SlideCarouselsBusinee() {
   return (
-    <Carousel>
+    <Carousel >
       <Carousel.Item>
         <img
           className="d-block w-100"

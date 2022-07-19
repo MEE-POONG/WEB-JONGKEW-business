@@ -12,10 +12,10 @@ export default function BusinessNavbar() {
   // const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <Navbar bg="secondary" variant="light" expand={false}>
+      <Navbar  bg="secondary" variant="light" expand={false}>
         <Container  >
 
-          <Navbar.Brand href="#">
+          <Navbar.Brand  href="#">
             <Image src="https://i.imgur.com/FPczyH9.png" width={200} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" className="p-1 rounded-circle" >
