@@ -43,61 +43,61 @@ export default function BusinessList() {
                     
 
 
-                    <div className="center">
-                        <Table striped bordered hover className="text-center">
-                            <thead>
+                    <div className="align-middle">
+                        <Table striped bordered hover className="middle" >
+                            <thead  className="middle">
                                 <tr>
                                     <th>รูปร้าน</th>
                                     <th>ชื่อร้าน</th>
                                     <th>เวลาเปิดทำการ</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody  className="middle">
                                 <tr>
-                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="300" height="200" /></td>
-                                    <td>กาก</td>
+                                    <td className="middle"><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="100" height="100" /></td>
+                                    <td className="align-middle">กาก</td>
                                     <td>00.00-00.00</td>
                                 </tr>
                                 <tr>
-                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="300" height="200" /></td>
-                                    <td>Jacob</td>
+                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="100" height="100" /></td>
+                                    <td className="align-middle">Jacob</td>
                                     <td>Thornton</td>
                                 </tr>
-                                <tr>
-                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="300" height="200" /></td>
+                                {/* <tr>
+                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="200" height="100" /></td>
                                     <td>Larry the Bird</td>
                                     <td>@twitter</td>
                                 </tr>
                                 <tr>
-                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="300" height="200" /></td>
+                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="200" height="100" /></td>
                                     <td>Larry the Bird</td>
                                     <td>@twitter</td>
                                 </tr>
                                 <tr>
-                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="300" height="200" /></td>
+                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="200" height="100" /></td>
                                     <td>Larry the Bird</td>
                                     <td>@twitter</td>
                                 </tr>
                                 <tr>
-                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="300" height="200" /></td>
+                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="200" height="100" /></td>
                                     <td>Larry the Bird</td>
                                     <td>@twitter</td>
                                 </tr>
                                 <tr>
-                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="300" height="200" /></td>
+                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="200" height="100" /></td>
                                     <td>Larry the Bird</td>
                                     <td>@twitter</td>
                                 </tr>
                                 <tr>
-                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="300" height="200" /></td>
+                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="200" height="100" /></td>
                                     <td>Larry the Bird</td>
                                     <td>@twitter</td>
                                 </tr>
                                 <tr>
-                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="300" height="200" /></td>
+                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="200" height="100" /></td>
                                     <td>Larry the Bird</td>
                                     <td>@twitter</td>
-                                </tr>
+                                </tr> */}
                             </tbody>
 
 

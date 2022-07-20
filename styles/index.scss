@@ -1,13 +1,47 @@
 @import "~bootstrap/scss/bootstrap";
 @import "grib.scss";
-@import "bill.scss";
-@import "profile.scss";
-@import "ModaladdPromotion.scss";
-.test{
-    h1{
+@import "table.scss";
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1920px) {
+    .column {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .column {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+
+.test {
+    h1 {
+
         color: red;
     }
 }
+
 .object-cover {
     object-fit: cover;
-  }
+}
