@@ -44,26 +44,26 @@ export default function BusinessList() {
 
 
                     <div className="align-middle">
-                        <Table striped bordered hover className="middle column" >
-                            <thead  className="middle column">
+                        <Table striped bordered hover className="middle" >
+                            <thead  className="middle">
                                 <tr>
                                     <th>รูปร้าน</th>
                                     <th>ชื่อร้าน</th>
                                     <th>เวลาเปิดทำการ</th>
                                 </tr>
                             </thead>
-                            <tbody  className="middle column">
+                            <tbody  className="middle">
                                 <tr>
-                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="100" height="" /></td>
+                                    <td className="middle"><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="100" height="100" /></td>
                                     <td className="align-middle">กาก</td>
                                     <td>00.00-00.00</td>
                                 </tr>
                                 <tr>
-                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="200" height="100" /></td>
+                                    <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="100" height="100" /></td>
                                     <td className="align-middle">Jacob</td>
                                     <td>Thornton</td>
                                 </tr>
-                                <tr>
+                                {/* <tr>
                                     <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="200" height="100" /></td>
                                     <td>Larry the Bird</td>
                                     <td>@twitter</td>
@@ -97,7 +97,7 @@ export default function BusinessList() {
                                     <td><Image src="https://i.imgur.com/qzRcDgc.jpeg" width="200" height="100" /></td>
                                     <td>Larry the Bird</td>
                                     <td>@twitter</td>
-                                </tr>
+                                </tr> */}
                             </tbody>
 
 
