@@ -16,7 +16,7 @@ export default function BusinessBill() {
 
 
       <Container className="bill">
-        <Card style={{ width: '50%'}}>
+        <Card className="kard">
           <Card.Body>
             <div>
             <Form.Select aria-label="Default select example">
@@ -26,9 +26,9 @@ export default function BusinessBill() {
       <option value="3">กรุงไทย</option>
     </Form.Select>
             </div>
-            <div><h3>ชื่อบัญชี:<Form.Control type="text" placeholder="กรอกชื่อบัญชี" /></h3></div>
-            <div><h3>เลขที่บัญชี<Form.Control type="number" placeholder="กรอกเลขที่บัญชี" /></h3></div>
-            <div><h3>เเนบรูปบัตรประชาชนเจ้าของบัญชี</h3></div>
+            <div><h4>ชื่อบัญชี:<Form.Control type="text" placeholder="กรอกชื่อบัญชี" /></h4></div>
+            <div><h4>เลขที่บัญชี<Form.Control type="number" placeholder="กรอกเลขที่บัญชี" /></h4></div>
+            <div><h4>เเนบรูปบัตรประชาชนเจ้าของบัญชี</h4></div>
             <div><Form.Control type="file" size="sm" /></div><br></br>
             <div><button>ยืนยัน</button></div>
           </Card.Body>

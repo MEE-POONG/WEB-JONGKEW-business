@@ -13,11 +13,11 @@ function ModaladdPromotion() {
 
     <>
       
-      <Button variant="white" onClick={handleShow}>
-        <h4>เพิ่มโปรโมชั่นร้าน<AiOutlinePlus size={25} /></h4>
+      <Button variant="white" className= "bt"   onClick={handleShow}>
+        เพิ่มโปรโมชั่นร้าน<AiOutlinePlus className="pl" size={25} />
       </Button>
 
-      <Modal  size="lg" show={show} onHide={handleClose} centered>
+      <Modal size="lg" show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>อัปโหลดโปรโมชั่นร้าน&nbsp;(1237*254)</Modal.Title>
         </Modal.Header>

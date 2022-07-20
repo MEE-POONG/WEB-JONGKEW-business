@@ -13,13 +13,10 @@ export default function Dashboard() {
 
 
       <Container className="promotion">
-        <Row>
-          <Col></Col>
-          <Col></Col>
-          <Col><h1><BsFillMegaphoneFill size={50} />&nbsp;&nbsp;&nbsp;โปรโมชั่น</h1></Col>
-          <Col></Col>
-          <Col></Col>
-        </Row>
+      <div className="text-center mt-3">
+<h1><BsFillMegaphoneFill size={50} />&nbsp;&nbsp;&nbsp;โปรโมชั่น</h1>
+</div>
+      
         <Row>
           <Col>
           <ModaladdPromotion/>
