@@ -36,28 +36,28 @@ export default function BusinessIndex() {
         </thead>
       </Table>
       
-      <Row xs="auto">
-        <Col>
+      <Row className="text-center mt-3">
+        <Col xs="3">
           <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">แชท</Tooltip>}>
             <span className="d-inline-block">
               <BsFillChatDotsFill size={30}/>
             </span>
           </OverlayTrigger>
         </Col>
-        <Col><OverlayTrigger overlay={<Tooltip id="tooltip-disabled">โปรโมชั่น</Tooltip>}>
+        <Col xs="3"><OverlayTrigger overlay={<Tooltip id="tooltip-disabled">โปรโมชั่น</Tooltip>}>
           <span className="d-inline-block">
             <AiFillTags size={30}/>
           </span>
         </OverlayTrigger>
         </Col>
-        <Col>
+        <Col xs="3">
           <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">ประวัติ</Tooltip>}>
             <span className="d-inline-block">
               <AiOutlineHistory size={30}/>
             </span>
           </OverlayTrigger>
         </Col>
-        <Col >
+        <Col xs="3" >
           <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">แจ้งเตือน</Tooltip>}>
             <span className="d-inline-block">
               <AiOutlineBell size={30}/>
