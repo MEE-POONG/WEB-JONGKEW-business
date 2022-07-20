@@ -5,11 +5,8 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(255, 255, 255);
     font-family: 'MN CUSTARD'
-}
-h3{
-    font-family: 'MN CUSTARD';
 }
 h3{
     font-family: 'MN CUSTARD';
@@ -17,5 +14,16 @@ h3{
 
 body{
     font-family: 'MN CUSTARD';
+}
+
+@media only screen and (max-width: 844px) { 
+
+kard{
+    width: 50%;
+    height: 100%;
+
+ }
+ 
+    
 }
 

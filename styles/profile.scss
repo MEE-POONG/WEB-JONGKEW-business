@@ -1,6 +1,7 @@
+.profile {
 
-.profile.container {
-    
+  .container {
+
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -8,19 +9,21 @@
     justify-content: center;
     background-color: rgb(255, 255, 255);
     font-family: 'MN CUSTARD'
-}
-h3{
-    font-family: 'MN CUSTARD';
-}
-h3{
-    font-family: 'MN CUSTARD';
-}
+  }
 
-body{
+  h3 {
     font-family: 'MN CUSTARD';
-}
+  }
 
-th {
+  h3 {
+    font-family: 'MN CUSTARD';
+  }
+
+  body {
+    font-family: 'MN CUSTARD';
+  }
+
+  th {
     text-align: center;
   }
 
@@ -35,4 +38,8 @@ th {
     height: 50px;
     border-radius: 50%;
   }
+  @media only screen and (max-width: 600px) { 
+    
+  }
 
+}
